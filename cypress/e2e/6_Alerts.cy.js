@@ -60,7 +60,7 @@ describe("Handling Alerts", () => {
     })
     cy.get("div[class='example'] p").should("have.contain", "Congratulations")
   })
-  it.only("JS Authenticated alert - username pwd along with url", () => {
+  it("JS Authenticated alert - username pwd along with url", () => {
     cy.visit("https://admin:admin@the-internet.herokuapp.com/basic_auth")
     cy.get("div[class='example'] p").should("have.contain", "Congratulations")
   })
