@@ -40,5 +40,39 @@ describe("Handle tables", () => {
     )
   })
 
-  it("Read all the row & columns data in the 1st page", () => {})
+  it("Pagination", () => {
+    //Find total no. of pages
+    cy.get(".col-sm-6.text-end").then((e) => {
+      let totalPages
+      let mytext = e.text() //Showing 1 to 10 of 19011 (1902 Pages)
+      totalPages = mytext.substring(
+        mytext.indexOf("(") + 1,
+        mytext.indexOf("Pages") - 1
+      )
+
+      cy.log("Total number of pages in the table ===>" + totalPages)
+    })
+
+    //Read the data
+    let total = 5
+
+    for (let p = 1; p <= total; p++) {
+      if (total > 1) {
+        cy.log("Active page is==" + p)
+
+        cy.get("ul[class='pagination']>li:nth-child(" + p + ")").click()
+        cy.wait(3000)
+
+        cy.get("table[class='table table-bordered table-hover']>tbody>tr").each(
+          ($row, index, $rows) => {
+            cy.wrap($row).within(() => {
+              cy.get("td:nth-child(3)").then((e) => {
+                cy.log(e.text())
+              })
+            })
+          }
+        )
+      }
+    }
+  })
 })
