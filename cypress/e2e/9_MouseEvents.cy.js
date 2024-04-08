@@ -74,7 +74,7 @@ describe("Mouse Events", () => {
     cy.get("#box6").drag("#box101", { force: true })
   })
 
-  it.only("Scrolling Page", () => {
+  it("Scrolling Page", () => {
     cy.visit("https://docs.cypress.io/plugins")
 
     cy.get(
