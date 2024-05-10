@@ -32,3 +32,19 @@ import "cypress-file-upload"
 //require('cypress-downloadfile/lib/downloadFileCommand')
 
 require("@4tw/cypress-drag-drop")
+
+Cypress.Commands.add("login", (username, password) => {
+  cy.session([username, password], () => {
+    cy.visit("https://dev-pms.indeadesignsystems.com/login")
+    cy.get("[type='email']").type(username)
+    cy.get("[type='password']").type(password)
+    cy.get("[type='submit']").click()
+    cy.wait(5000)
+  })
+})
+
+//Aliasing
+Cypress.Commands.add("aliasExample", () => {
+  cy.get('[data-testid="email"]').invoke("val").as("showingEmailCommand")
+  cy.get('[data-testid="name"]').invoke("val").as("showingNameCommand")
+})

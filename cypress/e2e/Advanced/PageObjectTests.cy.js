@@ -1,6 +1,6 @@
-import HomePage from "./Pages/HomePage"
-import ResultPage from "./Pages/ResultPage"
-import PlaylistPage from "./Pages/PlaylistPage"
+import HomePage from "../Pages/HomePage"
+import ResultPage from "../Pages/ResultPage"
+import PlaylistPage from "../Pages/PlaylistPage"
 
 describe("Page Object Test Suite", () => {
   it("Page Object Test1", () => {

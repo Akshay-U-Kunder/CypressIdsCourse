@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.7.0"
+    "cypress": "^13.7.0",
+    "fast-csv": "^5.0.1"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
