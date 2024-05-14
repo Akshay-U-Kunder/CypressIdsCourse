@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T05:38:37.809Z",
+    "end": "2024-05-13T05:39:04.335Z",
+    "duration": 26526,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "18582237-e30f-4456-b575-d816c78d8d1a",
+      "title": "",
+      "fullFile": "cypress/e2e/Advanced/PageObjectTests.cy.js",
+      "file": "cypress/e2e/Advanced/PageObjectTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eea076af-1338-4bd8-b9f2-d0c1aea086af",
+          "title": "Page Object Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Page Object Test1",
+              "fullTitle": "Page Object Test Suite Page Object Test1",
+              "timedOut": null,
+              "duration": 18309,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Advanced/PageObjectTests.cy.js\"\n}",
+              "code": "//Open youtube\n_HomePage.default.visit();\n//Search in Youtube\n_HomePage.default.searchInYoutube();\n//Go to Playlist\n_ResultPage.default.goToPlaylist();\n//Validate the playlist\n_PlaylistPage.default.elements.playlistTitle().should(\"have.text\", \"API Testing by Testers Talk\");",
+              "err": {},
+              "uuid": "3cfab1f0-ff65-419f-b4d5-a06dfdab1959",
+              "parentUUID": "eea076af-1338-4bd8-b9f2-d0c1aea086af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3cfab1f0-ff65-419f-b4d5-a06dfdab1959"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18309,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

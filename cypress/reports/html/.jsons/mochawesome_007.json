@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T05:40:02.732Z",
+    "end": "2024-05-13T05:40:06.643Z",
+    "duration": 3911,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "623f25e1-d9a0-4627-9af5-ec90ebe871c2",
+      "title": "",
+      "fullFile": "cypress/e2e/Advanced/ThenCommand.cy.js",
+      "file": "cypress/e2e/Advanced/ThenCommand.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4843c4cf-46cd-44f4-b06b-ea24eff3527c",
+          "title": "Then Command Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Then cmd example",
+              "fullTitle": "Then Command Test Suite Then cmd example",
+              "timedOut": null,
+              "duration": 701,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Advanced/ThenCommand.cy.js\"\n}",
+              "code": "cy.visit(\"https://commitquality.com/practice-contact-form\");\n//only after we type in something will we then access the textbox and get its text\ncy.get('[data-testid=\"name\"]').type(\"Testing\").then(textbox => {\n  //in here we can control the order of execution\n  //.val() is jquery to grab the value info\n  console.log(textbox.val());\n});",
+              "err": {},
+              "uuid": "e27794a5-7b12-4168-ba6b-684983bad309",
+              "parentUUID": "4843c4cf-46cd-44f4-b06b-ea24eff3527c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Then return example",
+              "fullTitle": "Then Command Test Suite Then return example",
+              "timedOut": null,
+              "duration": 221,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Advanced/ThenCommand.cy.js\"\n}",
+              "code": "cy.visit(\"https://commitquality.com/\");\n/* const topRow = cy.get(\".product-list-table tbody tr\").then((rows) => {\n  return rows[0]\n})\n topRow.then((row) => {\n  expect(row).to.have.text(\"11Product 2152021-02-01\")\n}) */\nconst topRow = cy.get(\".product-list-table tbody tr\").then(rows => {\n  return rows[0];\n}).then(row => {\n  expect(row).to.have.text(\"11Product 2152021-02-01\");\n});",
+              "err": {},
+              "uuid": "77fe601c-9f3a-4705-8f6b-0af86915e362",
+              "parentUUID": "4843c4cf-46cd-44f4-b06b-ea24eff3527c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e27794a5-7b12-4168-ba6b-684983bad309",
+            "77fe601c-9f3a-4705-8f6b-0af86915e362"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 922,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

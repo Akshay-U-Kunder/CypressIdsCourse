@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T05:37:59.658Z",
+    "end": "2024-05-13T05:38:04.070Z",
+    "duration": 4412,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "29adb081-bda5-47e6-a78f-e735a4a3fe62",
+      "title": "",
+      "fullFile": "cypress/e2e/Advanced/AliasTest2.cy.js",
+      "file": "cypress/e2e/Advanced/AliasTest2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e4cea619-b201-4b4f-9c36-d1be25850564",
+          "title": "Alias Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "alist test",
+              "fullTitle": "Alias Test Suite alist test",
+              "timedOut": null,
+              "duration": 1526,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Advanced/AliasTest2.cy.js\"\n}",
+              "code": "cy.get(\"@showingNameCommand\").should(\"eq\", \"Subscribe\");\ncy.get(\"@showingEmailCommand\").should(\"eq\", \"CommitQuality@fakeemailaddresssss.com\");",
+              "err": {},
+              "uuid": "6397aa64-7bca-47c5-9532-6546c675142c",
+              "parentUUID": "e4cea619-b201-4b4f-9c36-d1be25850564",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6397aa64-7bca-47c5-9532-6546c675142c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1526,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

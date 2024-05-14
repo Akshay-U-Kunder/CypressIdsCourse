@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T05:39:17.328Z",
+    "end": "2024-05-13T05:39:32.884Z",
+    "duration": 15556,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8cf7bced-cc94-4226-85bb-657e517e80e6",
+      "title": "",
+      "fullFile": "cypress/e2e/Advanced/PmsDashboardtest.cy.js",
+      "file": "cypress/e2e/Advanced/PmsDashboardtest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3bb819e2-f8c3-4961-8fad-9304b79f7460",
+          "title": "PMS Dashboard Test For session restore",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check ids icon visibility",
+              "fullTitle": "PMS Dashboard Test For session restore check ids icon visibility",
+              "timedOut": null,
+              "duration": 9373,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Advanced/PmsDashboardtest.cy.js\"\n}",
+              "code": "cy.visit(\"https://dev-pms.indeadesignsystems.com/login\");\ncy.get(\".navbar-brand\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "45fd9f62-a3e0-41b4-a7e8-821e6082f5ac",
+              "parentUUID": "3bb819e2-f8c3-4961-8fad-9304b79f7460",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check text of upcoming event",
+              "fullTitle": "PMS Dashboard Test For session restore check text of upcoming event",
+              "timedOut": null,
+              "duration": 2408,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/e2e/Advanced/PmsDashboardtest.cy.js\"\n}",
+              "code": "cy.visit(\"https://dev-pms.indeadesignsystems.com/login\");\ncy.get(\"div[class='card'] div[class='card-header']\").should(\"have.text\", \"UPCOMING EVENTS & HOLIDAYS\");",
+              "err": {},
+              "uuid": "dcd4b6cf-1b3a-4e47-beae-4bd760589abe",
+              "parentUUID": "3bb819e2-f8c3-4961-8fad-9304b79f7460",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "45fd9f62-a3e0-41b4-a7e8-821e6082f5ac",
+            "dcd4b6cf-1b3a-4e47-beae-4bd760589abe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11781,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
